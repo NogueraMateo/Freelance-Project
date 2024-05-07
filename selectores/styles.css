@@ -1,0 +1,164 @@
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:medium;
+  }
+  
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: normal;
+  }
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:medium;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#actual {
+    color: #fdcb22  ;
+}
+.zovthro-nav {
+    background-color: black;
+}
+
+.nav-menu {
+    list-style: none;        
+    padding: 0;              
+    margin: 0;              
+    display: flex;           
+    gap: 20px;               
+}
+
+nav img {
+    width: 12%;
+    aspect-ratio: 500/154;
+}
+
+.nav-menu li {
+    margin: 0;               
+}
+
+.nav-menu a {
+    text-decoration: none;   
+    color: #fff;             
+    padding: 10px 15px;      
+}
+
+.ingresar {
+    background-color: #fdcb22;
+    border-radius: 3px;
+    border:solid transparent;
+    padding: 10px 20px;
+    color: #000;               /* Color del texto en el botón */
+    cursor: pointer; /* Alinea el botón hacia la derecha */
+}
+
+.principal {
+    width: 50%;
+}
+
+#persona {
+    width: 35%;
+    aspect-ratio: 4801/3599;
+}
+
+nav {
+    display: flex;
+    align-items: center;       /* Centra verticalmente el contenido del nav */
+    justify-content: space-between; /* Distribuye los elementos: menú a la izquierda, botón a la derecha */
+    padding: 20px;
+    background-color: #fff;    /* Ajusta según tu diseño */
+}
+/*#858171*/
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;  
+    background: rgb(255 249 218);  
+}
+
+.poppins-bold.titulo {
+    margin: 0;
+    font-size: 3em;
+    line-height: 3.6rem;
+}
+
+.poppins-regular.parrafo {
+    font-size: 1.3rem;
+    color: #2c2b26;
+}
+
+.poppins-regular.informacion {
+    background-color: rgb(245, 192, 18);
+    border-radius: 3px;
+    border: solid transparent;
+    padding: 10px 6px;
+}
+
+/* Media Queries para Responsividad */
+@media screen and (max-width: 768px) {
+    /* Navegación en columnas */
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .ingresar {
+        margin-top: 10px;
+        align-self: flex-start;
+    }
+
+    .zovthro-nav {
+        flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .poppins-bold.titulo {
+        font-size: 2em;
+        line-height: 2.5rem;
+    }
+
+    #persona {
+        width: 60%;
+    }
+
+    .principal {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .poppins-bold.titulo {
+        font-size: 1.8em;
+        line-height: 2rem;
+    }
+
+    .principal {
+        width: 90%;
+    }
+
+    .nav-menu a {
+        padding: 5px 10px;
+    }
+}
