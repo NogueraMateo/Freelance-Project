@@ -1,3 +1,4 @@
+/* ------------------------ FUENTE POPPINS ------------------------*/
 .poppins-extralight {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
@@ -37,6 +38,9 @@
     font-style: normal;
   }
 
+html, body {
+    overflow-x: hidden;
+}
 body {
     margin: 0;
     padding: 0;
@@ -45,11 +49,10 @@ body {
     min-height: 100vh;
 }
 
+/* ------------------------- BARRA DE NAVEGACIÓN ---------------------------*/
 #actual {
     color: #fdcb22  ;
 }
-
-/* ------------------------- BARRA DE NAVEGACIÓN ---------------------------*/
 
 .nav-menu {
     list-style: none;        
@@ -124,7 +127,7 @@ body {
 }
 
 .main-content {
-    flex: 1 0 auto;/* El contenido principal ocupa el resto del espacio disponible */
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -133,8 +136,8 @@ body {
 .hero {
     display: flex;
     justify-content: center;
+    padding:7% 0;
     align-items: center;
-    height: 90vh;
     background: rgb(255 249 218);
 }
 
@@ -160,7 +163,7 @@ body {
 /* --------------------------------------- SEGUNDA SECCIÓN --------------------------------*/
 
 .section-title {
-    font-size: 2.4em;
+    font-size: 3em;
     text-align: center;
 }
 
@@ -189,6 +192,14 @@ body {
     height: 275px;
     width: 90%;
     padding: 15px 15px 30px 15px;
+    transition: all 0.3s ease;
+}
+
+
+.service-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    background-color: #282828; 
 }
 
 .service-card img{
@@ -219,9 +230,22 @@ body {
     object-fit: contain;
 }
 
+.poppins-bold.subtitle{
+    margin: 0;
+    font-size: 3em;
+    line-height: 3.6rem;
+}
+
 .about-us {
     display: flex;
     justify-content: space-around;
+}
+
+.about-us p {
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #000;
 }
 
 .description {
@@ -242,19 +266,6 @@ body {
     height: 100%;
 }
 
-.about-us p {
-    text-align: justify;
-    font-size: 1.2em;
-    line-height: 1.4em;
-    color: #000;
-}
-
-.poppins-bold.subtitle{
-    margin: 0;
-    font-size: 3em;
-    line-height: 3.6rem;
-}
-
 /* -------------------------- CUARTA SECCIÓN -------------------------*/
 .testimonials {
     margin-top: 3%;
@@ -262,29 +273,10 @@ body {
     align-items: center;
     flex-direction: column;
 }
-.poppins-bold.clients-title {
-    font-size: 3em;
-    text-align: center;
-}
-
-.comment {
-    font-size: 1.05em;
-    position: relative; /* Permite que el texto se superponga sobre el icono */
-    z-index: 1;
-}
 
 .testimonial-content {
     width: 55%;
     text-align: justify;
-}
-
-.quote-icon {
-    position: absolute; /* Fija el icono en la esquina superior izquierda */
-    top: 5%;
-    left: 4.5%;
-    font-size: 10em;
-    line-height: 1; /* Evita el espacio adicional alrededor del icono */
-    color: #fdcb22;
 }
 
 .testimonial-card {
@@ -321,13 +313,137 @@ body {
     cursor: pointer;
 }
 
+.poppins-bold.clients-title {
+    font-size: 3em;
+    text-align: center;
+}
+
+.comment {
+    font-size: 1.05em;
+    position: relative; /* Permite que el texto se superponga sobre el icono */
+    z-index: 1;
+}
+
+.quote-icon {
+    position: absolute; 
+    top: 5%;
+    left: 4.5%;
+    font-size: 10em;
+    line-height: 1; 
+    color: #fdcb22;
+}
+
+/* ------------------------ QUINTA SECCIÓN -------------------------*/
+.allied {
+    margin: 5% 0 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.allied img {
+    width: 90%;
+    aspect-ratio: 1/0.3;
+    object-fit: contain;
+}
+
+.allied-title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+
+/*--------------------- SEXTA SECCIÓN -------------------------*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    background-color: rgb(255 249 218);
+}
+
+.contact-title {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.contact p {
+    width: 50%;
+    text-align: center;
+    margin: 0 0 2% 0;
+}
+
+form {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#email {
+    border: solid #fdcb22 1px;
+    width: 25%;
+    padding-left: 1%;
+    background-color: rgb(245 245 245);
+}
+
+#submit {
+    background-color: #fdcb22;
+    border: none;
+    width: 13%;
+}
+
+/* ---------------------- FOOTER --------------------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 3% 7% 3% 3%;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas si es necesario */
+}
+
+#zovthro-footer{
+    aspect-ratio: 1/0.4;
+    object-fit: contain;
+    width: 22%; /* Ajusta el tamaño del logo según lo necesites */
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-social img {
+    max-width: 40px; 
+    padding: 8px;
+}
+
+.footer-contact h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.footer-contact p, .footer-location p{
+    margin: 0 0 5px 0; /* Margen inferior para el espacio entre párrafos */
+    font-size: 1em;
+    color: #ccc; /* Color más suave */
+}
+
+.footer-location {
+    height: 65px;
+    display: flex;
+    align-items: start;
+}
+
 @media screen and (max-width: 1437px) {
     .testimonial-content {
         margin-top: 7%;
     }
 }
 
-@media screen and (max-width: 919px) {
+@media screen and (max-width: 924px) {
+    /* CUARTA SECCIÓN*/
     .testimonial-content{
         margin-top: 15%;
     }
@@ -335,19 +451,26 @@ body {
     .testimonial-image {
         width: 40%;
     }
+
+    /* SEXTA SECCIÓN */
+    .contact-title {
+        font-size: 2em;
+    }
 }
 
 /* Media Queries para Responsividad */
 @media screen and (max-width: 768px) {
-    /* Navegación en columnas */
+    /* BARRA DE NAVEGACIÓN*/
     .zovthro-nav img {
         width: 20%;
     }
+    
     .zovthro-nav.menu {
         flex-direction: column;
     }
+
     .nav-menu {
-        display: none; /* Esconde el menú por defecto */
+        display: none;
     }
 
     .ingresar {
@@ -374,17 +497,21 @@ body {
     .ingresar {
         margin: 10px 0;
         align-self: flex-start;
-        
     }
 
+    /*PRIMERA SECCIÓN*/
     .hero {
         flex-direction: column;
+        padding-top: 15%;
+        justify-content: flex-start;
+        /*max-height: 70vh;*/
     }
 
     .poppins-bold.titulo {
-        font-size: 2em;
+        font-size: 2.2em;
         line-height: 2.5rem;
-    }
+        margin-bottom: 4%;
+    }   
 
     #persona {
         width: 60%;
@@ -393,7 +520,13 @@ body {
     .principal {
         width: 80%;
     }
+    
+    /* SEGUNDA SECCIÓN */
+    .section-title {
+        font-size: 2.2em;
+    }
 
+    /* TERCERA SECCIÓN */
     .about-us {
         flex-direction: column;
         justify-content: center;
@@ -411,17 +544,21 @@ body {
         justify-content: center;
         width: 100%;
     }
+
     .meeting-container img {
         width: 50%;
     }
+
     .poppins-bold.subtitle {
         text-align: center;
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     .about-us p {
         justify-self: center;
     }
+
+    /* CUARTA SECCIÓN */
     .testimonial-image {
         display: none;
     }
@@ -431,17 +568,84 @@ body {
     }
     .poppins-bold.clients-title {
         text-align: center;
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
-    
-}
+    /* QUINTA SECCIÓN */
+    .allied-title {
+        font-size: 2.2em;
+    }
+
+    /* SEXTA SECCIÓN*/
+    .contact-title {
+        font-size: 2.2em;
+    }
+
+    .contact-title {
+        font-size: 1.7em;
+    }
+
+    .contact {
+        align-items: start;
+    }
+
+    .contact p {
+        margin-top: 3%;
+        text-align: start;
+        width: 100%;
+    }
+
+    form {
+        margin-top: 6%;
+        height: 30px;
+        justify-content: start;
+    }
+
+    #email {
+        font-size: 0.7em;
+        width: 40%;
+    }
+
+    #submit {
+        font-size: 0.7em;
+        width: 30%;
+    }
+
 
 @media screen and (max-width: 480px) {
+    /* BARRA DE NAVEGACIÓN */
     .zovthro-nav img {
         width: 30%;
     }
 
+    .nav-menu a {
+        padding: 5px 10px;
+    }
+
+    /* PRIMERA SECCIÓN 
+    .hero {
+        min-height: 60vh;
+    }*/
+
+    .poppins-bold.titulo {
+        font-size: 1.8em;
+        line-height: 2rem;
+    }
+
+    .principal {
+        width: 90%;
+    }
+
+    #persona {
+        width: 80%;
+    }
+
+    /* SEGUNDA SECCIÓN */
+    .section-title {
+        font-size: 2em;
+    }
+
+    /* TERCERA SECCIÓN*/
     .about-us {
         flex-direction: column;
     }
@@ -452,11 +656,6 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    .poppins-bold.titulo {
-        font-size: 1.8em;
-        line-height: 2rem;
     }
 
     .poppins-bold.subtitle {
@@ -472,14 +671,23 @@ body {
         font-size: 1em;
         justify-content: center;
     }
-    .principal {
-        width: 90%;
-    }
+    
     .meeting-container img {
         width: 60%;
     }
 
-    .nav-menu a {
-        padding: 5px 10px;
+    .poppins-bold.clients-title {
+        text-align: center;
+        font-size: 2em;
     }
-}
+
+    /* QUINTA SECCIÓN */
+    .allied-title {
+        font-size: 2em;
+    }
+
+    /* SEXTA SECCIÓN */
+    .contact p {
+        margin-top: 3%;
+    }
+}}
