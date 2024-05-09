@@ -23,6 +23,18 @@
     font-weight: 400;
     font-style: normal;
     font-size:medium;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
   }
 
 body {
@@ -47,7 +59,7 @@ body {
     gap: 20px;               
 }
 
-nav {
+.zovthro-nav {
     display: flex;
     align-items: center;       
     justify-content: space-between;
@@ -55,9 +67,10 @@ nav {
     background-color: #000000;
 }
 
-nav img {
-    width: 12%;
-    aspect-ratio: 500/154;
+.zovthro-nav img {
+    width: 14%;
+    aspect-ratio: 1/0.4;
+    object-fit: contain;
 }
 
 .nav-menu li {
@@ -78,7 +91,26 @@ nav img {
     color: #000;      
     cursor: pointer; 
 }
+.nav-menu li:hover {
+    transition: 200ms;
+    color: #ffeeb6;
+    transform: scale(1.09);
+}
 
+.ingresar:hover {
+    transition: 200ms;
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.menu-icon {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+}
 
 /* ------------------------------- PRIMERA SECCIÓN -------------------------------*/
 
@@ -106,14 +138,14 @@ nav img {
     background: rgb(255 249 218);
 }
 
-.poppins-bold.titulo {
+.poppins-bold.titulo{
     margin: 0;
     font-size: 3em;
     line-height: 3.6rem;
 }
 
 .poppins-regular.parrafo {
-    font-size: 1.3rem;
+    font-size: 0.8em;
     color: #2c2b26;
 }
 
@@ -154,9 +186,9 @@ nav img {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    height: 270px; /* Tamaño mínimo fijo para todas las tarjetas */
+    height: 275px;
     width: 90%;
-    padding: 15px;
+    padding: 15px 15px 30px 15px;
 }
 
 .service-card img{
@@ -174,27 +206,175 @@ nav img {
 }
 
 .service-card p {
+    margin: 0;
     font-size: 1em;
     line-height: 1.4em;
     color: #ccc;
 }
 
+/* --------------------- TERCERA SECCIÓN ----------------------*/
+#reunion {
+    max-width: 85%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-around;
+}
+
+.description {
+    width: 35%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.description button {
+    margin-top: 10%;
+}
+
+.meeting-container {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.about-us p {
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #000;
+}
+
+.poppins-bold.subtitle{
+    margin: 0;
+    font-size: 3em;
+    line-height: 3.6rem;
+}
+
+/* -------------------------- CUARTA SECCIÓN -------------------------*/
+.testimonials {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.poppins-bold.clients-title {
+    font-size: 3em;
+    text-align: center;
+}
+
+.comment {
+    font-size: 1.05em;
+    position: relative; /* Permite que el texto se superponga sobre el icono */
+    z-index: 1;
+}
+
+.testimonial-content {
+    width: 55%;
+    text-align: justify;
+}
+
+.quote-icon {
+    position: absolute; /* Fija el icono en la esquina superior izquierda */
+    top: 5%;
+    left: 4.5%;
+    font-size: 10em;
+    line-height: 1; /* Evita el espacio adicional alrededor del icono */
+    color: #fdcb22;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgb(255 249 218); /* Fondo suave */
+    border-radius: 15px;
+    padding: 4%;
+    box-sizing: border-box;
+    width: 80%;
+    position: relative; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-image {
+    object-fit: contain;
+    width: 30%;
+    aspect-ratio: 1/1;
+}
+
+.testimonial-navigation {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.testimonial-navigation button {
+    border: none;
+    background-color: transparent;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1437px) {
+    .testimonial-content {
+        margin-top: 7%;
+    }
+}
+
+@media screen and (max-width: 919px) {
+    .testimonial-content{
+        margin-top: 15%;
+    }
+    
+    .testimonial-image {
+        width: 40%;
+    }
+}
+
 /* Media Queries para Responsividad */
 @media screen and (max-width: 768px) {
     /* Navegación en columnas */
-    .nav-menu {
+    .zovthro-nav img {
+        width: 20%;
+    }
+    .zovthro-nav.menu {
         flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
+    }
+    .nav-menu {
+        display: none; /* Esconde el menú por defecto */
     }
 
     .ingresar {
-        margin-top: 10px;
-        align-self: flex-start;
+        display: none;
     }
 
-    .zovthro-nav {
+    .ingresar.s {
+        display: inline;
+        align-self: center;
+    }
+
+    .nav-menu.show {
+        display: flex;
         flex-direction: column;
+        gap: 20px;
+        background-color: black;
+        padding: 20px;
+    }
+
+    .menu-icon {
+        display: inline; /* Muestra el ícono de hamburguesa */
+    }
+
+    .ingresar {
+        margin: 10px 0;
+        align-self: flex-start;
+        
     }
 
     .hero {
@@ -213,16 +393,90 @@ nav img {
     .principal {
         width: 80%;
     }
+
+    .about-us {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .description {
+        width: 90%;
+        margin: 8% 4% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .meeting-container {
+        justify-content: center;
+        width: 100%;
+    }
+    .meeting-container img {
+        width: 50%;
+    }
+    .poppins-bold.subtitle {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .about-us p {
+        justify-self: center;
+    }
+    .testimonial-image {
+        display: none;
+    }
+    .testimonial-content {
+        width: 100%;
+        margin-top: 20%;
+    }
+    .poppins-bold.clients-title {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    
 }
 
 @media screen and (max-width: 480px) {
+    .zovthro-nav img {
+        width: 30%;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .description {
+        width: 90%;
+        margin: 13% 4% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .poppins-bold.titulo {
         font-size: 1.8em;
         line-height: 2rem;
     }
 
+    .poppins-bold.subtitle {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .description button {
+        width: 40%;
+    }
+
+    .description p {
+        font-size: 1em;
+        justify-content: center;
+    }
     .principal {
         width: 90%;
+    }
+    .meeting-container img {
+        width: 60%;
     }
 
     .nav-menu a {
