@@ -1,0 +1,429 @@
+/* ------------------------ FUENTE POPPINS ------------------------*/
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:medium;
+  }
+  
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: normal;
+  }
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:medium;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+html, body {
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ------------------------- BARRA DE NAVEGACIÓN ---------------------------*/
+#actual {
+    color: #fdcb22  ;
+}
+
+.nav-menu {
+    list-style: none;        
+    padding: 0;              
+    margin: 0;              
+    display: flex;           
+    gap: 20px;               
+}
+
+.zovthro-nav {
+    display: flex;
+    align-items: center;       
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.zovthro-nav img {
+    width: 14%;
+    aspect-ratio: 1/0.4;
+    object-fit: contain;
+}
+
+.nav-menu li {
+    margin: 0;               
+}
+
+.nav-menu a {
+    text-decoration: none;   
+    color: #fff;             
+    padding: 10px 15px;      
+}
+
+.ingresar {
+    background-color: #fdcb22;
+    border-radius: 3px;
+    border:solid transparent;
+    padding: 10px 20px;
+    color: #000;      
+    cursor: pointer; 
+}
+.nav-menu li:hover {
+    transition: 200ms;
+    color: #ffeeb6;
+    transform: scale(1.09);
+}
+
+.ingresar:hover {
+    transition: 200ms;
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.menu-icon {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+}
+
+.about-us-image {
+    position: relative;
+    background-image: url("logos/Recurso 7-8.png"); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover; /* La imagen cubre toda la sección */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; /* Usa 80% de la altura del viewport */
+}
+
+.services-info {
+    padding-top: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-info img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    width: 30%;
+}
+
+.poppins-regular.text {
+    width: 52%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.companies div.trust {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.companies h2 {
+    font-size: 2.9em;
+    width: 55%;
+    text-align: center;
+}
+
+.companies p {
+    width: 55%;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+.companies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 6%;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.companie-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.companies {
+    margin-bottom: 10%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    background-color: rgb(255 249 218);
+}
+
+.contact-title {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.contact p {
+    width: 50%;
+    text-align: center;
+    margin: 0 0 2% 0;
+}
+
+form {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#email {
+    border: solid #fdcb22 1px;
+    width: 25%;
+    padding-left: 1%;
+    background-color: rgb(245 245 245);
+}
+
+#submit {
+    background-color: #fdcb22;
+    border: none;
+    width: 13%;
+}
+
+/* ---------------------- FOOTER --------------------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 3% 7% 3% 3%;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas si es necesario */
+}
+
+#zovthro-footer{
+    aspect-ratio: 1/0.4;
+    object-fit: contain;
+    width: 22%; /* Ajusta el tamaño del logo según lo necesites */
+}
+
+.footer-social {    
+    display: flex;
+}
+
+.footer-social img {
+    max-width: 40px; 
+    padding: 8px;
+}
+
+.footer-contact h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.footer-contact p, .footer-location p{
+    margin: 0 0 5px 0; /* Margen inferior para el espacio entre párrafos */
+    font-size: 1em;
+    color: #ccc; /* Color más suave */
+}
+
+.footer-location {
+    height: 65px;
+    display: flex;
+    align-items: start;
+}
+
+@media screen and (max-width: 1518px){
+    .about-us-image {
+        height: 50vh;
+    }
+}
+
+@media  screen and (max-width: 1000px) {
+    .about-us-image {
+        height: 40vh;
+    }
+
+    /* SEXTA SECCIÓN */
+    .contact-title {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /* BARRA DE NAVEGACIÓN*/
+    .zovthro-nav img {
+        width: 20%;
+    }
+    
+    .zovthro-nav.menu {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .ingresar {
+        display: none;
+    }
+
+    .ingresar.s {
+        display: inline;
+        align-self: center;
+    }
+
+    .nav-menu.show {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: black;
+        padding: 20px;
+    }
+
+    .menu-icon {
+        display: inline; /* Muestra el ícono de hamburguesa */
+    }
+
+    .ingresar {
+        margin: 10px 0;
+        align-self: flex-start;
+    }   
+
+    .about-us-image {
+        height: 40vh;
+    }
+
+    .poppins-regular.text {
+        width: 70%;
+    }
+
+    .services-info img {
+        width: 40%;
+    }
+
+    .companies h2 {
+        margin-top: 15%;
+        width: 90%;
+        font-size: 2em;
+    }
+
+    .companies p {
+        width: 90%;
+        margin-bottom: 10%;
+    }
+
+    /* SEXTA SECCIÓN*/
+    .contact-title {
+        font-size: 2.2em;
+    }
+
+    .contact-title {
+        font-size: 1.7em;
+    }
+
+    .contact {
+        align-items: start;
+    }
+
+    .contact p {
+        margin-top: 3%;
+        text-align: start;
+        width: 100%;
+    }
+
+    form {
+        margin-top: 6%;
+        height: 30px;
+        justify-content: start;
+    }
+
+    #email {
+        font-size: 0.7em;
+        width: 40%;
+    }
+
+    #submit {
+        font-size: 0.7em;
+        width: 30%;
+    }
+
+    
+}
+
+@media screen and (max-width: 480px){
+    .about-us-image {
+        height: 25vh;
+    }
+
+    .poppins-regular.text {
+        text-align: start;
+        width: 90%;
+        font-size: 0.7em;
+    }
+
+    .companies h2 {
+        text-align: start;
+        width: 90%;
+        font-size: 1.5em;
+    }
+
+    .companie-card {
+        width: 60%;
+    }
+
+    .companies p {
+        text-align: start;
+        font-size: 0.7em;
+        width: 90%;
+    }
+
+    /* SEXTA SECCIÓN */
+    .contact p {
+        font-size: 0.7em;
+        margin-top: 3%;
+    }
+
+    .companies {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}
