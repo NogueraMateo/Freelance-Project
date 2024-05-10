@@ -1,0 +1,456 @@
+/* ------------------------ FUENTE POPPINS ------------------------*/
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:medium;
+  }
+  
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: normal;
+  }
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:medium;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+html, body {
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ------------------------- BARRA DE NAVEGACIÓN ---------------------------*/
+#actual {
+    color: #fdcb22  ;
+}
+
+.nav-menu {
+    list-style: none;        
+    padding: 0;              
+    margin: 0;              
+    display: flex;           
+    gap: 20px;               
+}
+
+.zovthro-nav {
+    display: flex;
+    align-items: center;       
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.zovthro-nav img {
+    width: 14%;
+    aspect-ratio: 1/0.4;
+    object-fit: contain;
+}
+
+.nav-menu li {
+    margin: 0;               
+}
+
+.nav-menu a {
+    text-decoration: none;   
+    color: #fff;             
+    padding: 10px 15px;      
+}
+
+.ingresar {
+    background-color: #fdcb22;
+    border-radius: 3px;
+    border:solid transparent;
+    padding: 10px 20px;
+    color: #000;      
+    cursor: pointer; 
+}
+.nav-menu li:hover {
+    transition: 200ms;
+    color: #ffeeb6;
+    transform: scale(1.09);
+}
+
+.ingresar:hover {
+    transition: 200ms;
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.menu-icon {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+}
+
+/* ---------------------------- PRIMERA SECCIÓN ------------------------------*/
+.catalogue-image {
+    position: relative;
+    background-image: url("logos/Recurso 3-8.png"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+/* ---------------------------- SEGUNDA SECCIÓN ------------------------------*/
+.section-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7%;
+}
+
+.section-description p{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+.section-description img {
+    width: 30%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+/* ----------------------------- TERCERA SECCIÓN -----------------------------*/
+.section-title {
+    font-size: 3em;
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    height: 275px;
+    width: 90%;
+    padding: 15px 15px 30px 15px;
+    transition: all 0.3s ease;
+}
+
+
+.service-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    background-color: #282828; 
+}
+
+.service-card img{
+    width: 30%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin: 30px 0;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.service-card p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #ccc;
+}
+
+@media screen and (max-width: 1518px){
+    .catalogue-image {
+        height: 50vh;
+    }
+}
+
+@media  screen and (max-width: 1030px) {
+    /* PRIMERA SECCIÓN */
+    .catalogue-image {
+        height: 40vh;
+    }
+
+    /* SEGUNDA SECCIÓN */
+    .section-description p{
+        width: 80%;
+    }
+
+    .section-description img {
+        width: 35%;
+    }
+}
+
+/*--------------------- CUARTA SECCIÓN -------------------------*/
+.contact {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    background-color: rgb(255 249 218);
+}
+
+.contact-title {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.contact p {
+    width: 50%;
+    text-align: center;
+    margin: 0 0 2% 0;
+}
+
+form {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#email {
+    border: solid #fdcb22 1px;
+    width: 25%;
+    padding-left: 1%;
+    background-color: rgb(245 245 245);
+}
+
+#submit {
+    background-color: #fdcb22;
+    border: none;
+    width: 13%;
+}
+
+/* ---------------------- FOOTER --------------------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 3% 7% 3% 3%;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas si es necesario */
+}
+
+#zovthro-footer{
+    aspect-ratio: 1/0.4;
+    object-fit: contain;
+    width: 22%; /* Ajusta el tamaño del logo según lo necesites */
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-social img {
+    max-width: 40px; 
+    padding: 8px;
+}
+
+.footer-contact h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.footer-contact p, .footer-location p{
+    margin: 0 0 5px 0; /* Margen inferior para el espacio entre párrafos */
+    font-size: 1em;
+    color: #ccc; /* Color más suave */
+}
+
+.footer-location {
+    height: 65px;
+    display: flex;
+    align-items: start;
+}
+
+@media screen and (max-width: 924px) {
+    /* CUARTA SECCIÓN */
+    .contact-title {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /* BARRA DE NAVEGACIÓN*/
+    .zovthro-nav img {
+        width: 20%;
+    }
+    
+    .zovthro-nav.menu {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .ingresar {
+        display: none;
+    }
+
+    .ingresar.s {
+        display: inline;
+        align-self: center;
+    }
+
+    .nav-menu.show {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: black;
+        padding: 20px;
+    }
+
+    .menu-icon {
+        display: inline;
+    }
+
+    .ingresar {
+        margin: 10px 0;
+        align-self: flex-start;
+    } 
+
+    /* PRIMERA SECCIÓN*/
+    .catalogue-image {
+        height: 40vh;
+    }
+
+    /* SEGUNDA SECCIÓN */
+    .section-description img {
+        width: 40%;
+    }
+
+    /* TERCERA SECCIÓN */
+    .section-title {
+        font-size: 2.2em;
+    }
+
+    /* CUARTA SECCIÓN */
+    .contact-title {
+        font-size: 2.2em;
+    }
+
+    .contact-title {
+        font-size: 1.7em;
+    }
+
+    .contact {
+        align-items: start;
+    }
+
+    .contact p {
+        margin-top: 3%;
+        text-align: start;
+        width: 100%;
+    }
+
+    form {
+        margin-top: 6%;
+        height: 30px;
+        justify-content: start;
+    }
+
+    #email {
+        font-size: 0.7em;
+        width: 40%;
+    }
+
+    #submit {
+        font-size: 0.7em;
+        width: 30%;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #zovthro-footer{
+        align-self: center;
+        width: 35%;
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width: 480px){
+    /* BARRA DE NAVEGACIÓN*/
+    .menu-icon {
+        font-size: 1.5em;
+    }
+    /* PRIMERA SECCIÓN */
+    .catalogue-image {
+        height: 25vh;
+    }
+
+    /* SEGUNDA SECCIÓN*/
+    .section-description p {
+        font-size: 0.7em;
+    }
+
+    .section-description img {
+        width: 50%;
+    }
+
+    /* TERCERA SECCIÓN */
+    .section-title {
+        font-size: 2em;
+    }
+
+    /* CUARTA SECCIÓN */
+    .contact p {
+        margin-top: 3%;
+    }
+}
