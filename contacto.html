@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logos/Logo_Vf-16.webp" type="image/x-icon">
     <link rel="stylesheet" href="styles/contacto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,14 +13,14 @@
 <body>
     <header>
         <nav class="zovthro-nav poppins-regular" id="zovthro-nav">
-            <img src="logos/Logo_Vf-02-removebg-preview.png" alt="ZOVTHRO Logo" loading="lazy">
+            <img src="logos/Logo_Vf-02-removebg-preview.webp" alt="ZOVTHRO Logo" loading="lazy">
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a id="actual" href="contacto.html">Contacto</a></li>
+                <li><a href="home.html" aria-label="Enlace al apartado principal">Home</a></li>
+                <li><a href="nosotros.html" aria-label="Enlace al apartado nosotros">Nosotros</a></li>
+                <li><a href="servicios.html" aria-label="Enlace al apartado servicios">Servicios</a></li>
+                <li><a id="actual" href="contacto.html" aria-label="Enlace al apartado de contacto">Contacto</a></li>
             </ul>
-            <a href="login.html">
+            <a href="login.html" aria-label="Botón para inicar sesión">
                 <button class="ingresar poppins-bold" id="ingresar">Ingresar</button>
             </a>
             <button class="menu-icon" id="menu-icon">&#9776;</button>
@@ -37,16 +38,16 @@
 
     <section class="contact-section">
         <div class="form-container">
-            <img src="logos/Recurso 1-8.png" alt="Hombre sosteniendo un celular." loading="lazy">
+            <img src="logos/Recurso-1-8.webp" alt="Hombre sosteniendo un celular." loading="lazy">
         
             <form action="#" method="POST">
                 <h2 class="poppins-bold">¡Lleva tu empresa al siguiente nivel!</h2>
                 <label for="nombre" class="poppins-regular">Nombre</label>
-                <input type="text" name="nombre" id="nombre"  required>
+                <input type="text" name="nombre" id="nombre"  required placeholder="John Doe" class="poppins-regular">
                 <label for="telefono" class="poppins-regular">Teléfono</label>
-                <input type="text" name="telefono" id="telefono" required>
+                <input type="text" name="telefono" id="telefono" required placeholder="+573010234561" class="poppins-regular">
                 <label for="correo" class="poppins-regular">Correo</label>
-                <input type="email" name="correo" id="correo"  required>
+                <input type="email" name="correo" id="correo"  required placeholder="example@email.com" class="poppins-regular">
                 <button type="submit" class="poppins-bold submit-button">Enviar</button>
             </form>
         </div>
@@ -54,12 +55,12 @@
 
     <footer class="footer">
         
-        <img src="logos/Logo_Vf-02-removebg-preview.png" alt="ZOVTHRO Holding Logo" id="zovthro-footer" loading="lazy">
+        <img src="logos/Logo_Vf-02-removebg-preview.webp" alt="ZOVTHRO Holding Logo" id="zovthro-footer" loading="lazy">
         
         <div class="footer-social">
-            <a href="https://facebook.com" target="_blank"><img src="logos/Recurso-12.png" alt="Facebook" loading="lazy"></a>
-            <a href="https://linkedin.com" target="_blank"><img src="logos/Recurso-10.png" alt="LinkedIn" loading="lazy"></a>
-            <a href="https://instagram.com" target="_blank"><img src="logos/Recurso-11.png" alt="Instagram" loading="lazy"></a>
+            <a href="https://facebook.com" target="_blank"><img src="logos/Recurso-12.webp" alt="Facebook" loading="lazy"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="logos/Recurso-10.webp" alt="LinkedIn" loading="lazy"></a>
+            <a href="https://instagram.com" target="_blank"><img src="logos/Recurso-11.webp" alt="Instagram" loading="lazy"></a>
         </div>
         <div class="footer-contact">
             <h3 class="poppins-medium">Contáctanos</h3>
