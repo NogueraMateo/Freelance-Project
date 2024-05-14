@@ -115,117 +115,94 @@ body {
     color: white;
 }
 
-.about-us-image {
+/* -------------------------- PRIMERA SECCIÓN ------------------------*/
+.contact-us-image {
     position: relative;
-    background-image: url("logos/Recurso 7-8.png"); /* Asegúrate de que la ruta sea correcta */
-    background-size: cover; /* La imagen cubre toda la sección */
+    background-image: url("../logos/Recurso 2-8.png"); 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh; /* Usa 80% de la altura del viewport */
+    height: 80vh;
 }
 
-.services-info {
-    padding-top: 6%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.services-info img {
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    width: 30%;
-}
-
-.poppins-regular.text {
-    width: 52%;
-    text-align: center;
-    margin-bottom: 5%;
-}
-
-.companies div.trust {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.companies h2 {
-    font-size: 2.9em;
-    width: 55%;
-    text-align: center;
-}
-
-.companies p {
-    width: 55%;
-    text-align: center;
-    margin-bottom: 5%;
-    margin-top: 0;
-}
-
-.companies-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 6%;
-    justify-content: center;
-    justify-items: center;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-
-.companie-card {
+/* ------------------------- SEGUNDA SECCIÓN -------------------------*/
+.description {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    height: 100px;
-    width: 100%;
-    box-sizing: border-box;
-
+    height: 50vh;
 }
 
-.companies {
+.description p {
+    width: 55%;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* ------------------------- TERCERA SECCIÓN --------------------------*/
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 10%;
 }
 
-.contact {
+.form-container {
+    width: 70%;
+    height: 50%;
+}
+
+.form-container {
+    display: flex;
+    background-color: rgb(29 29 29);
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.form-container form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5%;
-    background-color: rgb(255 249 218);
-}
-
-.contact-title {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.contact p {
     width: 50%;
-    text-align: center;
-    margin: 0 0 2% 0;
+    color: #ffffff;
+    padding: 4%;
+    box-sizing: border-box;
+    gap: 10px;
 }
 
-form {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
+.form-container form  h2 {
+    font-size: 2.3em;
+    margin: 0 0 5% 0;
 }
 
-#email {
-    border: solid #fdcb22 1px;
-    width: 25%;
-    padding-left: 1%;
-    background-color: rgb(245 245 245);
+.form-container form label {
+    font-size: 0.9em;
+    color: #dbdbdb;
 }
 
-#submit {
-    background-color: #fdcb22;
+.form-container img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    width: 35%;
+}
+
+input[type="text"], input[type="email"], button[type="submit"] {
+    padding: 18px;
+    margin-bottom: 10px;
     border: none;
-    width: 13%;
+    border-radius: 5px;
+}
+
+input[type="email"] {
+    margin-bottom: 8%;
+}
+
+button[type="submit"] {
+    background-color: rgb(253 203 34);
+}
+
+button[type="submit"]:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 /* ---------------------- FOOTER --------------------*/
@@ -236,16 +213,16 @@ form {
     background-color: black;
     color: white;
     padding: 3% 7% 3% 3%;
-    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas si es necesario */
+    flex-wrap: wrap; 
 }
 
 #zovthro-footer{
     aspect-ratio: 1/0.4;
     object-fit: contain;
-    width: 22%; /* Ajusta el tamaño del logo según lo necesites */
+    width: 22%; 
 }
 
-.footer-social {    
+.footer-social {
     display: flex;
 }
 
@@ -260,9 +237,9 @@ form {
 }
 
 .footer-contact p, .footer-location p{
-    margin: 0 0 5px 0; /* Margen inferior para el espacio entre párrafos */
+    margin: 0 0 5px 0;
     font-size: 1em;
-    color: #ccc; /* Color más suave */
+    color: #ccc; 
 }
 
 .footer-location {
@@ -272,23 +249,17 @@ form {
 }
 
 @media screen and (max-width: 1518px){
-    .about-us-image {
+    .contact-us-image {
         height: 50vh;
     }
 }
 
 @media  screen and (max-width: 1000px) {
-    .about-us-image {
+    .contact-us-image {
         height: 40vh;
     }
-
-    /* SEXTA SECCIÓN */
-    .contact-title {
-        font-size: 2em;
-    }
 }
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     /* BARRA DE NAVEGACIÓN*/
     .zovthro-nav img {
         width: 20%;
@@ -320,110 +291,57 @@ form {
     }
 
     .menu-icon {
-        display: inline; /* Muestra el ícono de hamburguesa */
+        display: inline; 
     }
 
     .ingresar {
         margin: 10px 0;
         align-self: flex-start;
-    }   
+    }
 
-    .about-us-image {
+    /* PRIMERA SECCIÓN */
+    .contact-us-image {
         height: 40vh;
     }
 
-    .poppins-regular.text {
-        width: 70%;
-    }
-
-    .services-info img {
-        width: 40%;
-    }
-
-    .companies h2 {
-        margin-top: 15%;
-        width: 90%;
-        font-size: 2em;
-    }
-
-    .companies p {
-        width: 90%;
-        margin-bottom: 10%;
-    }
-
-    /* SEXTA SECCIÓN*/
-    .contact-title {
-        font-size: 2.2em;
-    }
-
-    .contact-title {
-        font-size: 1.7em;
-    }
-
-    .contact {
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
         align-items: start;
     }
 
-    .contact p {
-        margin-top: 3%;
-        text-align: start;
-        width: 100%;
+    #zovthro-footer{
+        align-self: center;
+        width: 35%;
+        margin-bottom: 20px;
     }
+}
 
-    form {
-        margin-top: 6%;
-        height: 30px;
-        justify-content: start;
-    }
-
-    #email {
-        font-size: 0.7em;
-        width: 40%;
-    }
-
-    #submit {
-        font-size: 0.7em;
+@media screen and (max-width: 480px) {
+    /* BARRA DE NAVEGACIÓN */
+    .zovthro-nav img {
         width: 30%;
     }
 
-    
-}
+    .nav-menu a {
+        padding: 5px 10px;
+    }
 
-@media screen and (max-width: 480px){
-    .about-us-image {
+    .poppins-bold.titulo {
+        font-size: 1.8em;
+        line-height: 2rem;
+    }
+
+    .principal {
+        width: 90%;
+    }
+
+    #persona {
+        width: 80%;
+    }
+
+    /* PRIMERA SECCIÓN */
+    .contact-us-image {
         height: 25vh;
-    }
-
-    .poppins-regular.text {
-        text-align: start;
-        width: 90%;
-        font-size: 0.7em;
-    }
-
-    .companies h2 {
-        text-align: start;
-        width: 90%;
-        font-size: 1.5em;
-    }
-
-    .companie-card {
-        width: 60%;
-    }
-
-    .companies p {
-        text-align: start;
-        font-size: 0.7em;
-        width: 90%;
-    }
-
-    /* SEXTA SECCIÓN */
-    .contact p {
-        font-size: 0.7em;
-        margin-top: 3%;
-    }
-
-    .companies {
-        margin-top: 50px;
-        margin-bottom: 100px;
     }
 }

@@ -118,7 +118,7 @@ body {
 /* ---------------------------- PRIMERA SECCIÓN ------------------------------*/
 .catalogue-image {
     position: relative;
-    background-image: url("logos/Recurso 3-8.png"); 
+    background-image: url("../logos/Recurso 3-8.png"); 
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -207,28 +207,6 @@ body {
     color: #ccc;
 }
 
-@media screen and (max-width: 1518px){
-    .catalogue-image {
-        height: 50vh;
-    }
-}
-
-@media  screen and (max-width: 1030px) {
-    /* PRIMERA SECCIÓN */
-    .catalogue-image {
-        height: 40vh;
-    }
-
-    /* SEGUNDA SECCIÓN */
-    .section-description p{
-        width: 80%;
-    }
-
-    .section-description img {
-        width: 35%;
-    }
-}
-
 /*--------------------- CUARTA SECCIÓN -------------------------*/
 .contact {
     margin-top: 5%;
@@ -278,13 +256,13 @@ form {
     background-color: black;
     color: white;
     padding: 3% 7% 3% 3%;
-    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas si es necesario */
+    flex-wrap: wrap;
 }
 
 #zovthro-footer{
     aspect-ratio: 1/0.4;
     object-fit: contain;
-    width: 22%; /* Ajusta el tamaño del logo según lo necesites */
+    width: 22%; 
 }
 
 .footer-social {
@@ -302,15 +280,37 @@ form {
 }
 
 .footer-contact p, .footer-location p{
-    margin: 0 0 5px 0; /* Margen inferior para el espacio entre párrafos */
+    margin: 0 0 5px 0; 
     font-size: 1em;
-    color: #ccc; /* Color más suave */
+    color: #ccc; 
 }
 
 .footer-location {
     height: 65px;
     display: flex;
     align-items: start;
+}
+
+@media screen and (max-width: 1518px){
+    .catalogue-image {
+        height: 50vh;
+    }
+}
+
+@media  screen and (max-width: 1030px) {
+    /* PRIMERA SECCIÓN */
+    .catalogue-image {
+        height: 40vh;
+    }
+
+    /* SEGUNDA SECCIÓN */
+    .section-description p{
+        width: 80%;
+    }
+
+    .section-description img {
+        width: 35%;
+    }
 }
 
 @media screen and (max-width: 924px) {
@@ -421,8 +421,6 @@ form {
         width: 35%;
         margin-bottom: 20px;
     }
-
-    
 }
 
 @media screen and (max-width: 480px){
